@@ -46,7 +46,10 @@ h1 {
     font-size: 2em;
     padding: 0.2em;
     text-shadow: #CCCCCC;
-   }
+    animation-duration: 5s;
+    animation-name: fadein;
+    animation-timing-function: ease-out;
+}
 
 h2 {
     font-size: 1.2em;
@@ -165,6 +168,11 @@ form { display: flex;
 
 input, textarea { margin-bottom: .5em; }
 
+@keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+}
+
 @media (min-width: 600px) {
         header {
                 background-image: url(bigfish.gif);
@@ -217,6 +225,10 @@ input, textarea { margin-bottom: .5em; }
         
         label {
          text-align: right;
+        }
+
+        article {
+         flex: 2;
         }
 }
 
