@@ -161,6 +161,19 @@ td, th {
         display: none;
 }
 
+#shop {
+        background-color: white;
+        border: 1px solid #AEC3E3;
+}
+
+#shop img {
+        float: right;
+}
+
+#shop form {
+        clear: right;
+}
+
 form { display: flex;
         flex-direction: column;
         padding-left: 1em; width: 80%; 
